@@ -272,7 +272,9 @@ h1{
   font-weight: 500;
 }
 .news3{
-  box-shadow: 0 3px  black;
+  box-shadow: 0 1px  black;
+  font-weight: 300;
+  font-size:34px;
 }
 .colors{
   margin: 0;
