@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../public/backend/css/bootstrap.min.css">
+    <title>Thêm sản phẩm</title>
+</head>
+<body>
+    <div class="col-md-8 col-xs-offset-2">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Thêm sửa sản phẩm</div>
+            <div class="panel-body">
+                <!-- muốn upload ảnh thì trong thẻ form phải có thuộc tính enctype= "multipart/form-data" -->
+                <form method="post" action="<?php echo $form_action ?>" enctype= "multipart/form-data">
+                <!-- row -->
+                <div class="row" style="margin-top:5px;">
+                    <div class="col-md-3">Tiêu đề</div>
+                    <div class="col-md-9">
+                        <input type="text" name="c_name" class="form-control" value="">
+                    </div>
+                </div>
+                <!-- end row -->
+                <div class="row" style="margin-top:5px;">
+                    <div class="col-md-3">Giá</div>
+                    <div class="col-md-9">
+                        <input type="number" name="c_price" class="form-control" value="">
+                    </div>
+                </div>
+                <!-- row --> 
+                <div class="row" style="margin-top:5px;">
+                    <div class="col-md-3">Thuộc danh mục</div>
+                    <div class="col-md-9">
+                        <select name="fk_category_product_id">
+                            <option value="">Quần áo Nam</option>
+                            <option value="">Quần áo nữ</option>
+                            <option value="">Quần áo đôi</option>
+                        			
+                        </select>
+                    </div>
+                </div>
+               
+                <div class="row" style="margin-top:5px;">
+                    <div class="col-md-3">Giới thiệu</div>
+                    <div class="col-md-9">
+                        <textarea name="" class="form-control" style="height:250px;">			
+                        </textarea>
+                    </div>
+                </div>
+         
+                <div class="row" style="margin-top:5px;">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-9">
+                        <input type="checkbox" > <label for="c_hotproduct">Tin nổi bật</label>
+                    </div>
+                </div>
+              
+                <div class="row" style="margin-top:5px;">
+                    <div class="col-md-3">Ảnh</div>
+                    <div class="col-md-9">
+                        <input type="file" name="c_img">
+                    </div>
+                </div>
+                
+                <div class="row" style="margin-top:5px;">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-9">
+                        <input type="submit" class="btn btn-primary" value="Thêm">
+                    </div>
+                </div>
+                <!-- end row -->
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

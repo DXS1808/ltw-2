@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../public/backend/css/bootstrap.min.css">
+    <title>Quản lý sản phẩm</title>
+</head>
+<body>
+    <div class="col-md-10 col-xs-offset-1">
+        <div style="margin-bottom:5px;">
+            <a href="themsanpham.html" class="btn btn-primary">Thêm Sản Phẩm</a>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">Sản phẩm</div>
+            <div class="panel-body">
+                <table class="table table-hover table-bordered">
+                    <tr>
+                        <th style="width:50px;">STT</th>
+                        <th style="width:100px;">Ảnh</th>
+                        <th>Tiêu đề</th>
+                        <th style="width:200px;">Thuộc danh mục</th>
+                        <th style="width:100px;"></th>
+                    </tr>
+                    
+                    <tr>
+                        <td style="text-align:center;">1</td>
+                        <td style="text-align:center;">
+                            
+                                <img  src="img/1.jpg" style="width: 100px;">
+                            
+                        </td>
+                        <td>ÁO THUN U1ATN11101FOSHT</td>
+                        <td style="text-align:left;">
+                            Quần áo nam
+                        </td>
+                        <td style="text-align:center;">
+                            <a href="">Edit</a>&nbsp;
+                            <a href="">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">2</td>
+                        <td style="text-align:center;">
+                            
+                                <img  src="img/2.jpg" style="width: 100px;">
+                            
+                        </td>
+                        <td>QUẦN SHORT M1SKK1061002</td>
+                        <td style="text-align:left;">
+                            Quần áo nam
+                        </td>
+                        <td style="text-align:center;">
+                            <a href="">Edit</a>&nbsp;
+                            <a href="">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">3</td>
+                        <td style="text-align:center;">
+                            
+                                <img  src="img/3.jpg" style="width: 100px;">
+                            
+                        </td>
+                        <td>ÁO THUN U1ATN2061002</td>
+                        <td style="text-align:left;">
+                            Quần áo nam
+                        </td>
+                        <td style="text-align:center;">
+                            <a href="">Edit</a>&nbsp;
+                            <a href="">Delete</a>
+                        </td>
+                    </tr>
+                </table>
+                <style type="text/css">
+                    .pagination{padding:0px; margin:0px;}			
+                </style>
+                <ul class="pagination">
+                    <li class="page"><a class="page-item" href="#">Trang</a></li>
+                    
+                    <li class="page"><a class="page-item" href="admin.php?controller=product&p=<?php echo $i; ?>">1</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
